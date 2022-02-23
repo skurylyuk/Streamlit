@@ -69,7 +69,7 @@ if message_text != "":
      
     if explain_pred: 
         with st.spinner("Generating explanations"):
-            class_names = ['Not Spam', 'spam']
+            class_names = ['Not Spam', 'Spam']
             explainer = LimeTextExplainer(class_names = class_names)
             exp= explainer.explain_instance(message_text,
                                         model.predict_proba, num_features =10)
