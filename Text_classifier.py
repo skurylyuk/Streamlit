@@ -21,7 +21,7 @@ st.title("Text Message Classifier")
 message_text = st.text_input("Enter a message for spam evaluation")
 
 
-model = joblib.load('spam_classifier.joblib')
+model = joblib.load('spam_classifier_final.joblib')
 
 
 def text_cleaning(text, remove_stop_words=True, lemmatize_words=True):
