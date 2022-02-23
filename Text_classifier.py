@@ -18,6 +18,7 @@ import streamlit.components.v1 as components
 
 
 st.title("Text Message Classifier")
+st.write('Spam refers to messages which are unsolicited and unwanted.')
 message_text = st.text_input("Enter a message for spam evaluation")
 
 
